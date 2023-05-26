@@ -2,6 +2,8 @@
 
 NXT Post is an online blogging platform similar to Medium or Dev.to.
 
+This isn't anything special on its own. I made this to try and learn SQL databases (Postgres) and how they work. This project uses @vercel/postgres.
+
 ## Getting Started
 
 - Clone the repository
