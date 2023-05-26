@@ -2,6 +2,7 @@
   "name": "nxt-post",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "postcss": {
     "plugins": {
       "tailwindcss": {},
@@ -12,20 +13,36 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate": "ts-node src/db/runner.ts"
   },
   "dependencies": {
-    "@types/node": "20.2.3",
-    "@types/react": "18.2.7",
-    "@types/react-dom": "18.2.4",
-    "autoprefixer": "10.4.14",
-    "eslint": "8.41.0",
-    "eslint-config-next": "13.4.3",
-    "next": "13.4.3",
-    "postcss": "8.4.23",
+    "@react-icons/all-files": "^4.1.0",
+    "@vercel/postgres": "^0.3.0",
+    "bcryptjs": "^2.4.3",
+    "highlight.js": "^11.8.0",
+    "jsonwebtoken": "^9.0.0",
+    "jwt-decode": "^3.1.2",
+    "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "remarkable": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/highlightjs": "^9.12.2",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/node": "20.2.4",
+    "@types/react": "18.2.7",
+    "@types/react-dom": "18.2.4",
+    "@types/remarkable": "^2.0.3",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.4",
+    "postcss": "8.4.23",
+    "prettier-plugin-tailwindcss": "^0.3.0",
     "tailwindcss": "3.3.2",
+    "ts-node": "^10.9.1",
     "typescript": "5.0.4"
   }
 }
